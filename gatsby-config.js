@@ -21,8 +21,7 @@ if (isDev) {
         "data/reddit-placeholder/1.json",
         "data/tweet-placeholder/1.json",
         "data/hn-placeholder/1.json",
-        "data/reddit-top/**",
-        "data/reddit-top-issues/**",
+        "data/hn-top/**",
       ],
     },
   });
@@ -38,8 +37,7 @@ if (isDev) {
         "data/reddit-placeholder/1.json",
         "data/tweet-placeholder/1.json",
         "data/hn-placeholder/1.json",
-        "data/reddit-top/**",
-        "data/reddit-top-issues/**",
+        "data/hn-top/**",
       ],
     },
   });
@@ -60,11 +58,11 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Reddit热门`,
-      short_name: `Reddit热门`,
+      name: `Hacker News 热门`,
+      short_name: `HN热门`,
       start_url: `/`,
       lang: `zh`,
-      description: `用中文浏览Reddit热门内容`,
+      description: `用中文浏览 Hacker News 热门内容`,
       background_color: `#f7f0eb`,
       theme_color: `#FF4500`,
       display: `standalone`,
@@ -73,16 +71,16 @@ plugins = plugins.concat([
         {
           start_url: `/en/`,
           lang: `en`,
-          name: `Reddit Top`,
-          short_name: `RedditTop`,
-          description: `See what's buzzing on Reddit in your native language`,
+          name: `Hacker News Top`,
+          short_name: `HNTop`,
+          description: `See what's buzzing on Hacker News in your native language`,
         },
         {
           start_url: `/zh-Hant/`,
           lang: `zh-Hant`,
-          name: `Reddit熱門`,
-          short_name: `Reddit熱門`,
-          description: `用中文查看 Reddit 上的熱門內容`,
+          name: `Hacker News熱門`,
+          short_name: `HN熱門`,
+          description: `用中文查看 Hacker News 上的熱門內容`,
         },
       ],
     },
@@ -92,7 +90,7 @@ plugins = plugins.concat([
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
       trackingIds: [
-        "G-GQVR44BC8T", // Google Analytics / GA
+        "G-D82YESX6CD", // Google Analytics / GA
       ],
     },
   },
@@ -100,16 +98,12 @@ plugins = plugins.concat([
 module.exports = {
   plugins: plugins,
   siteMetadata: {
-    title: `Buzzing on Reddit`,
-    author: `Reddit`,
-    description: `See what's buzzing on Reddit in your native language`,
-    keywords: ["Reddit", "buzzing"],
-    siteUrl: "https://reddit.buzzing.cc",
+    title: `Buzzing on Hacker News`,
+    author: `Hacker News`,
+    description: `See what's buzzing on Hacker News in your native language`,
+    keywords: ["Hacker News", "HN", "buzzing"],
+    siteUrl: "https://hn.buzzing.cc",
     menuLinks: [
-      {
-        name: "Weekly Selection",
-        url: "/issues",
-      },
       {
         name: "RSS",
         url: "/rss.xml",
@@ -118,8 +112,8 @@ module.exports = {
     ],
     social: [
       {
-        name: `Reddit`,
-        url: `https://www.reddit.com/`,
+        name: `Hacker News`,
+        url: `https://news.ycombinator.com/`,
         external: true,
       },
     ],

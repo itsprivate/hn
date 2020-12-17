@@ -12,14 +12,14 @@ export default function Bio() {
       <Trans>
         See what's buzzing on{" "}
         <LinkUI
-          href="https://reddit.com"
+          href="https://news.ycombinator.com/"
           target="_blank"
           rel="noopener noreferrer"
           sx={css({
             lineHeight: 2,
           })}
         >
-          Reddit
+          Hacker News
         </LinkUI>{" "}
         in your native language on{" "}
         <LinkUI as={Link} to="/">
