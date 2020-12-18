@@ -23,7 +23,7 @@ export default function Bio() {
         </LinkUI>{" "}
         in your native language on{" "}
         <LinkUI as={Link} to="/">
-          reddit.buzzing.cc
+          hn.buzzing.cc
         </LinkUI>
       </Trans>
     </>
