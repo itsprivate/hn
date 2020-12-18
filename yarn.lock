@@ -6685,7 +6685,11 @@ gatsby-plugin-google-gtag@^2.4.0:
 
 gatsby-plugin-hn@^0.5.0:
   version "0.5.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/gatsby-plugin-hn/-/gatsby-plugin-hn-0.5.0.tgz#09671fe5b6f9f8467bf43d76446b1ea25c27a67b"
+=======
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-hn/-/gatsby-plugin-hn-0.5.0.tgz#09671fe5b6f9f8467bf43d76446b1ea25c27a67b"
+>>>>>>> c94b2898bce6758980d576dd489ffd290a2e5d52
   integrity sha512-spXzVyPpQ3iUpZBlhE8oE+58Yx6C9gVQWEtJk+rBQmprtMIm17Ixdw0ePmx0OEbDHCPG4b9vTr1jxRsM9xoyLQ==
   dependencies:
     "@babel/runtime" "^7.8.7"
@@ -7007,7 +7011,11 @@ gatsby-theme-blog-core@^2.0.2:
 
 gatsby-theme-buzzing@^0.10.0:
   version "0.10.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/gatsby-theme-buzzing/-/gatsby-theme-buzzing-0.10.0.tgz#75af5029f86473ea5d040705753c5b92accf0af5"
+=======
+  resolved "https://registry.yarnpkg.com/gatsby-theme-buzzing/-/gatsby-theme-buzzing-0.10.0.tgz#75af5029f86473ea5d040705753c5b92accf0af5"
+>>>>>>> c94b2898bce6758980d576dd489ffd290a2e5d52
   integrity sha512-ZaSr2gCzxRap08PNfX8pelv7JA4xCweq8vYLDuhqjqhK3prxfIBzzKBncF9LfYyYHHiFsKy8mt5GUUxn3Yb8Hg==
   dependencies:
     fs-extra "^9.0.1"
@@ -7035,7 +7043,11 @@ gatsby-theme-i18n@^1.0.4:
 
 gatsby-theme-timeline@^0.1.91:
   version "0.1.91"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.91.tgz#c0153f26b05b1e04d710cc75e694f96e860e32c1"
+=======
+  resolved "https://registry.yarnpkg.com/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.91.tgz#c0153f26b05b1e04d710cc75e694f96e860e32c1"
+>>>>>>> c94b2898bce6758980d576dd489ffd290a2e5d52
   integrity sha512-S2d2BuJJMxYyKcrq1DrHwqB9njebcw2QKD+5jMMIwT4Ar3XNjBWbvHWmhLZQvLH/pSR0vJpgJhKeI0M50iWFGw==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
