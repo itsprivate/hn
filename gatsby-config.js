@@ -53,7 +53,7 @@ plugins = plugins.concat([
       issueTypeName: ["RedditTopIssuesJson"],
       localesPath: localesPath,
       disqus: {
-        shortname: "reddit-top",
+        shortname: "buzzing-on-hn",
       },
     },
   },
