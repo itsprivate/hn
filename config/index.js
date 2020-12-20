@@ -27,6 +27,13 @@ const siteMetadata = {
       shortTitle: "BuzzHN",
       description: `See what's buzzing on Hacker News in your native language`,
       keywords: ["Hacker News", "HN", "buzzing"],
+      menuLinks: [
+        {
+          name: "RSS",
+          url: "/en/rss.xml",
+          prefetch: false,
+        },
+      ],
     },
     {
       locale: "zh-Hant",
@@ -34,6 +41,13 @@ const siteMetadata = {
       shortTitle: "HN熱門",
       description: "用中文瀏覽 Hacker News 熱門內容",
       keywords: ["Hacker News", "HN", "Hacker News 熱門", "互聯網熱門", "科技"],
+      menuLinks: [
+        {
+          name: "RSS",
+          url: "/zh-Hant/rss.xml",
+          prefetch: false,
+        },
+      ],
     },
   ],
 };
