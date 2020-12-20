@@ -1,3 +1,4 @@
+const { siteMetadata } = require("./config");
 const isDev =
   (process.env.NODE_ENV === "development" || process.env.LOCAL === "true") &&
   process.env.LOCAL !== "false";
@@ -60,31 +61,24 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Hacker News 热门`,
-      short_name: `HN热门`,
+      name: siteMetadata.title,
+      short_name: siteMetadata.shortTitle,
       start_url: `/`,
-      lang: `zh`,
-      description: `用中文浏览 Hacker News 热门内容`,
+      lang: siteMetadata.locale,
+      description: siteMetadata.description,
       background_color: `#f7f0eb`,
-      theme_color: `#FF4500`,
+      theme_color: `#ff6600`,
       display: `standalone`,
       icon: `src/images/icon.png`,
-      localize: [
-        {
-          start_url: `/en/`,
-          lang: `en`,
-          name: `Hacker News Top`,
-          short_name: `HNTop`,
-          description: `See what's buzzing on Hacker News in your native language`,
-        },
-        {
-          start_url: `/zh-Hant/`,
-          lang: `zh-Hant`,
-          name: `Hacker News熱門`,
-          short_name: `HN熱門`,
-          description: `用中文查看 Hacker News 上的熱門內容`,
-        },
-      ],
+      localize: siteMetadata.localize.map((item) => {
+        return {
+          start_url: `/${item.locale}/`,
+          lang: item.locale,
+          name: item.title,
+          short_name: item.shortTitle,
+          description: item.description,
+        };
+      }),
     },
   },
   {
@@ -98,26 +92,7 @@ plugins = plugins.concat([
   },
 ]);
 module.exports = {
+  flags: { QUERY_ON_DEMAND: true },
   plugins: plugins,
-  siteMetadata: {
-    title: `Buzzing on Hacker News`,
-    author: `Hacker News`,
-    description: `See what's buzzing on Hacker News in your native language`,
-    keywords: ["Hacker News", "HN", "buzzing"],
-    siteUrl: "https://hn.buzzing.cc",
-    menuLinks: [
-      {
-        name: "RSS",
-        url: "/rss.xml",
-        prefetch: false,
-      },
-    ],
-    social: [
-      {
-        name: `Hacker News`,
-        url: `https://news.ycombinator.com/`,
-        external: true,
-      },
-    ],
-  },
+  siteMetadata,
 };
