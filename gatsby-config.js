@@ -18,13 +18,7 @@ if (isDev) {
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: [
-        "data/reddit-placeholder/1.json",
-        "data/tweet-placeholder/1.json",
-        "data/hn-placeholder/1.json",
-        "data/hn-top/**",
-        "data/ph-placeholder/1.json",
-      ],
+      patterns: ["data/*-placeholder/1.json", "data/hn-top/**"],
     },
   });
 } else {
@@ -35,13 +29,7 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: [
-        "data/reddit-placeholder/1.json",
-        "data/tweet-placeholder/1.json",
-        "data/hn-placeholder/1.json",
-        "data/hn-top/**",
-        "data/ph-placeholder/1.json",
-      ],
+      patterns: ["data/*-placeholder/1.json", "data/hn-top/**"],
     },
   });
 }
@@ -49,7 +37,7 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-theme-buzzing`,
     options: {
-      tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
+      tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
       issueTypeName: ["RedditTopIssuesJson"],
       localesPath: localesPath,
