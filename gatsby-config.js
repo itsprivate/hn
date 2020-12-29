@@ -18,7 +18,11 @@ if (isDev) {
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/*-placeholder/1.json", "data/hn-top/**"],
+      patterns: [
+        "data/*-placeholder/1.json",
+        "data/hn-top/**",
+        "data/hn-top-issues/**",
+      ],
     },
   });
 } else {
@@ -29,7 +33,11 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/*-placeholder/1.json", "data/hn-top/**"],
+      patterns: [
+        "data/*-placeholder/1.json",
+        "data/hn-top/**",
+        "data/hn-top-issues/**",
+      ],
     },
   });
 }
@@ -39,7 +47,7 @@ plugins = plugins.concat([
     options: {
       tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["RedditTopIssuesJson"],
+      issueTypeName: ["HnTopIssuesJson"],
       localesPath: localesPath,
       disqus: {
         shortname: "buzzing-on-hn",

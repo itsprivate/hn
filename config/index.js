@@ -8,6 +8,10 @@ const siteMetadata = {
   keywords: ["Hacker News", "HN", "Hacker News 热门", "互联网热门", "科技"],
   menuLinks: [
     {
+      name: "每周精选",
+      url: "/issues",
+    },
+    {
       name: "RSS",
       url: "/rss.xml",
       prefetch: false,
@@ -34,6 +38,10 @@ const siteMetadata = {
       keywords: ["Hacker News", "HN", "buzzing"],
       menuLinks: [
         {
+          name: "Weekly Selection",
+          url: "/en/issues",
+        },
+        {
           name: "RSS",
           url: "/en/rss.xml",
           prefetch: false,
@@ -47,6 +55,10 @@ const siteMetadata = {
       description: "用中文瀏覽 Hacker News 熱門內容",
       keywords: ["Hacker News", "HN", "Hacker News 熱門", "互聯網熱門", "科技"],
       menuLinks: [
+        {
+          name: "每週精選",
+          url: "/zh-Hant/issues",
+        },
         {
           name: "RSS",
           url: "/zh-Hant/rss.xml",
