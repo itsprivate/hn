@@ -6,6 +6,8 @@ const siteMetadata = {
   shortTitle: "HN热门",
   description: "用中文浏览 Hacker News 热门内容",
   keywords: ["Hacker News", "HN", "Hacker News 热门", "互联网热门", "科技"],
+  telegram: "@buzzingcc",
+  telegram_chat_id: "-1001406368978",
   menuLinks: [
     {
       name: "每周精选",
