@@ -13,6 +13,18 @@ const siteMetadata = {
       name: "每周精选",
       url: "/issues",
     },
+  ],
+  subscriptions: [
+    {
+      name: "Twitter @buzzingcc",
+      url: "https://twitter.com/buzzingcc",
+      external: true,
+    },
+    {
+      name: "Telegram @buzzingcc",
+      url: "https://t.me/buzzingcc",
+      external: true,
+    },
     {
       name: "RSS",
       url: "/rss.xml",
