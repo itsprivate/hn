@@ -70,6 +70,19 @@ const siteMetadata = {
         },
       ],
     },
+    {
+      locale: "ja",
+      title: "Hacker News  人気の記事",
+      shortTitle: "HN人気",
+      description: "人気のHacker News記事を日本語で閲覧",
+      keywords: ["buzzing", "Hacker News ",],
+      menuLinks: [
+        {
+          name: "毎週の選択",
+          url: "/ja/issues",
+        },
+      ],
+    }
   ],
 };
 
