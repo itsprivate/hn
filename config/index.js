@@ -8,7 +8,7 @@ const siteMetadata = {
   keywords: ["Hacker News", "HN", "Hacker News 热门", "互联网热门", "科技"],
   telegram: "@buzzingcc",
   telegram_chat_id: "-1001406368978",
-  iconUrl: "https://news.buzzing.cc/avatar.png",
+  iconUrl: "https://hn.buzzing.cc/avatar.png",
   menuLinks: [
     {
       name: "每周精选",
@@ -76,14 +76,14 @@ const siteMetadata = {
       title: "Hacker News  人気の記事",
       shortTitle: "HN人気",
       description: "人気のHacker News記事を日本語で閲覧",
-      keywords: ["buzzing", "Hacker News ",],
+      keywords: ["buzzing", "Hacker News "],
       menuLinks: [
         {
           name: "毎週の選択",
           url: "/ja/issues",
         },
       ],
-    }
+    },
   ],
 };
 
